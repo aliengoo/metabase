@@ -1,0 +1,8 @@
+{
+  "ambientDependencies": {
+    "express": "registry:dt/express#4.0.0+20160317120654",
+    "mongoose": "registry:dt/mongoose#3.8.5+20160316155526",
+    "sequelize": "registry:dt/sequelize#3.4.1+20160317120654",
+    "winston": "registry:dt/winston#0.0.0+20160324163241"
+  }
+}
