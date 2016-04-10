@@ -14,4 +14,6 @@ var db = new Sequelize("metabase", "username", "password", {
   storage: path.join(__dirname, "./metabase.sqlite3")
 });
 
+db.sync();
+
 module.exports = db;

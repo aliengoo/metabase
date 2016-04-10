@@ -2,36 +2,25 @@ var Sequelize = require("sequelize");
 var db = require("../db/db");
 
 var Link = db.define("link", {
-  pn: {
+  parentNamespace: {
     type: Sequelize.STRING,
     allowNull: false,
     unique: "index_link_pnk"
   },
-  pk: {
+  parentKey: {
     type: Sequelize.STRING,
     allowNull: false,
     unique: "index_link_pnk"
   },
-  cn: {
+  childNamespace: {
     type: Sequelize.STRING,
     allowNull: false,
     unique: "index_link_cnk"
   },
-  ck: {
+  childKey: {
     type: Sequelize.STRING,
     allowNull: false,
     unique: "index_link_cnk"
-  },
-  c: {
-    type: Sequelize.DATE,
-    allowNull: false,
-    comment: "created",
-    defaultValue: Sequelize.NOW
-  },
-  u: {
-    type: Sequelize.DATE,
-    allowNull: false,
-    comment: "updated"
   }
 }, {
   indexes: [
